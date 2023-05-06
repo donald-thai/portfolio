@@ -2,7 +2,7 @@ import {useEffect, useState} from "react";
 import NavCard from "./NavCard";
 import $ from "jquery";
 
-const NavDrawer = ({ navOpen }) => {
+const NavDrawer = ({ navOpen, setNavOpen }) => {
 
   return (
     <nav
@@ -32,12 +32,12 @@ const NavDrawer = ({ navOpen }) => {
             navOpen ? "linkWrapperOpen" : ""
           } bg-black transition-[transform] duration-700 ease-[cubic-bezier(.13, .53, .38, .97)] px-10`}>
           {/* Cards go here */}
-          <NavCard title={"Home"} />
-          <NavCard title={"Projects"} />
-          <NavCard title={"About Me"} />
-          <NavCard title={"Other"} />
-          <NavCard title={"Other"} />
-          <NavCard title={"Other"} />
+          <NavCard title={"Home"} link="/" img="./home-screen.png" setNavOpen={setNavOpen}/>
+          <NavCard title={"Projects"} link="/projects" img="projects-screen.png" setNavOpen={setNavOpen}/>
+          <NavCard title={"About Me"} link="/about" setNavOpen={setNavOpen}/>
+          <NavCard title={"Other"} setNavOpen={setNavOpen}/>
+          <NavCard title={"Other"} setNavOpen={setNavOpen}/>
+          <NavCard title={"Other"} setNavOpen={setNavOpen}/>
         </div>
       </div>
     </nav>

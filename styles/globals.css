@@ -6,16 +6,21 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif !important;
 }
 
 .wrapper {
-  transition: transform 700ms cubic-bezier(.13, .53, .38, .97);
+  /* transition: transform 700ms cubic-bezier(.13, .53, .38, .97); */
   z-index: 2;
   position: relative;
+  /* background-color: white; */
+
 }
 
 .navTransition {
-  transition: transform 500ms cubic-bezier(.13, .53, .38, .97);
+  transition: transform 700ms cubic-bezier(.13, .53, .38, .97);
 }
 
 .moveUp {
@@ -33,5 +38,8 @@
 
 .shadowButton {
   box-shadow: 10px 40px 70px -4px rgba(0,0,0,.7);
+}
 
+.shadowCard:hover {
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
