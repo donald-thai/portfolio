@@ -36,8 +36,6 @@ const NavDrawer = ({ navOpen, setNavOpen }) => {
           <NavCard title={"Projects"} link="/projects" img="projects-screen.png" setNavOpen={setNavOpen}/>
           <NavCard title={"About Me"} link="/about" setNavOpen={setNavOpen}/>
           <NavCard title={"Other"} setNavOpen={setNavOpen}/>
-          <NavCard title={"Other"} setNavOpen={setNavOpen}/>
-          <NavCard title={"Other"} setNavOpen={setNavOpen}/>
         </div>
       </div>
     </nav>
