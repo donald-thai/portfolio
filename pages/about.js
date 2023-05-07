@@ -8,39 +8,49 @@ const about = ({ navOpen, setNavOpen }) => {
     <div
       className={`h-full w-full ${
         navOpen ? "moveUp" : ""
-      } transiton-[height] duration-700 ease-[cubic-bezier(.13, .53, .38, .97)] wrapper bg-[#e2e2e2] pt-28 px-5 md:px-32 pb-32 flex flex-col `}>
-      <div className="uppercase tracking-wide font-bold flex flex-col gap-3 mb-40">
+      } transiton-[height] duration-700 ease-[cubic-bezier(.13, .53, .38, .97)] wrapper bg-[#e2e2e2] pt-28 px-5 md:px-20 lg:px-32 pb-32 flex flex-col `}>
+      <div className="uppercase tracking-wide font-bold flex flex-col gap-2 md:gap-3 mb-28 md:mb-40">
         <div className="flex items-center gap-6">
-          <h1 className="flex-1 text-9xl">Donald</h1>
+          <h1 className="flex-1 text-[3.25rem]/[1.5rem] md:text-8xl lg:text-9xl">
+            Donald
+          </h1>
           <div className="flex-1">
-            <h3 className="text-xl w-[80%] font-lg normal-case font-semibold tracking-normal">
+            <h3 className="hidden lg:inline w-[80%] md:text-base lg:text-xl normal-case font-semibold tracking-normal">
               i am an aspiring software engineer based in austin, texas with
-              experience in full stack development. currently looking for SWE internship opportunities
+              experience in full stack development. currently looking for SWE
+              internship opportunities
             </h3>
           </div>
         </div>
-        <div className="flex flex-col uppercase w-[fit] text-9xl gap-3 w-fit">
-          <div className="flex justify-between items-center gap-10">
+        <div className="flex flex-col uppercase w-fit text-[3.25rem] md:text-8xl lg:text-9xl gap-3">
+          <div className="flex justify-between items-center gap-2 md:gap-10">
             <h1 className="text-white">An</h1>
             <img
               src="./ice-tree.jpg"
               alt=""
-              className="object-cover h-[1em] w-[2em]"
+              className="object-cover h-[1em] md:h-[1.25em] lg:h-[1em] w-[2em]"
             />
-            <h1 className="text-9xl uppercase">Thai</h1>
+            <h1>Thai</h1>
           </div>
         </div>
-        <div className="flex mt-10 gap-6 items-center h-fit">
+        <div>
+          <h3 className="w-full text-sm md:text-base lg:text-xl normal-case font-semibold">
+            I am an aspiring software engineer based in Austin, Texas with
+            experience in full stack development. currently looking for SWE
+            internship opportunities
+          </h3>
+        </div>
+        <div className="flex mt-5 md:mt-10 gap-3 md:gap-6 items-center h-fit">
           <img
             src="./github-box.svg"
             alt="github icon"
-            className="w-10 h-full hover:scale-110 active:scale-95 transition ease-in-out duration-300"
+            className="w-7 md:w-10 h-full hover:scale-110 active:scale-95 transition ease-in-out duration-300"
             onClick={() => openInNewTab("https://github.com/donald-thai")}
           />
           <img
             src="./linkedin-box.svg"
             alt="linkedin icon"
-            className="w-10 h-full hover:scale-110 active:scale-95 transition ease-in-out duration-300"
+            className="w-7 md:w-10 h-full hover:scale-110 active:scale-95 transition ease-in-out duration-300"
             onClick={() =>
               openInNewTab("https://www.linkedin.com/in/donald-thai/")
             }
@@ -58,11 +68,11 @@ const about = ({ navOpen, setNavOpen }) => {
         </div>
       </div>
 
-      <div className="flex flex-col gap-8 w-full mb-28">
-        <h1 className="text-5xl font-bold">✳ WHO AM I</h1>
-        <div className="flex gap-6 justify-between w-full">
-          <div className="flex-1">
-            <div className="text-2xl flex flex-col gap-6 w-[80%]">
+      <div className="flex flex-col gap-8 w-full mb-20 md:mb-28">
+        <h1 className="text-3xl md:text-5xl font-bold">✳ WHO AM I</h1>
+        <div className="flex flex-col-reverse md:flex-row gap-6 justify-between w-full">
+          <div className=" md:flex-1">
+            <div className="md:text-xl lg:text-2xl flex flex-col gap-6 md:w-[80%]">
               <p>
                 I am a junior pursuing a bachelor's degree in Computer Science
                 at the University of Texas at Austin. As an avid problem solver,
@@ -76,21 +86,29 @@ const about = ({ navOpen, setNavOpen }) => {
               </p>
             </div>
           </div>
-          <div className="flex-1 relative">
+          <div className="hidden md:inline md:flex-1 md:relative">
             <img
               src="./standing-nyc.jpg"
               alt=""
-              className="object-cover h-full w-full absolute top-0 left-0"
+              className="object-cover h-[50%] md:h-full w-full md:absolute md:top-0 md:left-0"
+            />
+          </div>
+
+          <div className="inline md:hidden">
+            <img
+              src="./standing-nyc.jpg"
+              alt=""
+              className="object-cover h-[20em] w-full"
             />
           </div>
         </div>
       </div>
 
-      <div className="flex flex-col gap-8 w-full mb-28">
-        <h1 className="text-5xl font-bold">✳ MY EXPERIENCE</h1>
-        <div className="flex justify-between">
-          <div className="text-2xl flex-1">
-            <div className="w-[80%] flex flex-col gap-8">
+      <div className="flex flex-col gap-8 w-full mb-20 md:mb-28">
+        <h1 className="text-3xl md:text-5xl font-bold">✳ MY EXPERIENCE</h1>
+        <div className="flex flex-col md:flex-row gap-8 md:gap-0 justify-between">
+          <div className="md:text-xl lg:text-2xl flex-1">
+            <div className="md:w-[80%] flex flex-col gap-8">
               <p>
                 Over the past two summers, I've been a software engineer intern
                 at Cigna. Last summer, I worked in an AGILE team to create a
@@ -103,12 +121,12 @@ const about = ({ navOpen, setNavOpen }) => {
                 </Link>
                 , to help employees make the most of ther in-person days.
               </p>
-              <p>This summer, ...</p>
+              <p className="hidden lg:inline">This summer, ...</p>
             </div>
           </div>
           {/* Picture overlapping solution: https://bricampgomez.com/blog/how-to-overlap-images-in-css/ */}
           <div className="grid grid-cols-[repeat(12,1fr)] relative flex-1">
-            <div className="col-[8_/_-1] row-[1] z-[1] pt-[110%]">
+            <div className="col-[8_/_-1] row-[1] z-[1] pt-[130%] lg:pt-[110%]">
               <img
                 src="tecdp-award.jpg"
                 alt=""
@@ -119,10 +137,16 @@ const about = ({ navOpen, setNavOpen }) => {
               <img
                 src="tecdp-2022.jpg"
                 alt=""
-                className="w-[90%] object-cover"
+                className="w-[100%] lg:w-[90%] object-cover"
               />
             </div>
           </div>
+        </div>
+        <div className="inline lg:hidden md:text-xl">
+          <p>
+            This summer i will be an intern on the x team working on the y
+            product. my intern team and i will make ...
+          </p>
         </div>
       </div>
 
@@ -142,16 +166,17 @@ const about = ({ navOpen, setNavOpen }) => {
           />
         </div>
       </div>
-      <div className="flex md:flex-row-reverse gap-8 justify-between">
-        <div className="flex-[4_4_0]">
-          <h1 className="text-5xl font-bold text-right">OTHER INTERESTS ✳</h1>
+      <div className="flex flex-col md:flex-row-reverse gap-8 justify-between">
+        <div className="flex-[4_4_0] text-[1.75rem] md:text-5xl font-bold md:text-right">
+          <h1 className="md:hidden">✳ OTHER INTERESTS</h1>
+          <h1 className="hidden md:inline">OTHER INTERESTS ✳</h1>
         </div>
         <div className="flex-[5_5_0]">
-          <p className="text-2xl">
+          <p className="md:text-xl lg:text-2xl ">
             In my free time, I like to play sports. I've participated in
-            intramural basketball, volleyball, and ultimate frisbee as part of the
-            Texas Vietnamese Student Association. In addition to sports, I also
-            love to watch{" "}
+            intramural basketball, volleyball, and ultimate frisbee as part of
+            the Texas Vietnamese Student Association. In addition to sports, I
+            also love to watch{" "}
             <Link className="underline font-bold" href="/other">
               movies/tv shows, listen to music, and read books.
             </Link>{" "}

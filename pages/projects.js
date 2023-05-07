@@ -10,9 +10,9 @@ const projects = ({ navOpen, setNavOpen }) => {
         className={`h-full w-full ${navOpen ? "moveUp" : ""} transiton-[height] duration-700 ease-[cubic-bezier(.13, .53, .38, .97)] wrapper bg-[#e2e2e2] pt-28 md:pt-32 px-5 md:px-32 pb-32
       `}>
         <div className="w-full h-[40vh] md:h-[50vh] lg:h-[70vh]">
-          <div className="text-3xl md:text-6xl font-semibold uppercase tracking-wider flex flex-col gap-1 mb-8">
+          <div className="text-4xl md:text-6xl font-semibold uppercase tracking-wider flex flex-col gap-1 mb-8">
             <h1>My</h1>
-            <h1 className="font-semibold text-5xl md:text-8xl lg:text-9xl">
+            <h1 className="font-semibold text-[3.5rem] md:text-8xl lg:text-9xl">
               Projects.
             </h1>
           </div>
