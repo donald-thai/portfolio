@@ -32,8 +32,8 @@ const NavDrawer = ({ navOpen, setNavOpen }) => {
             navOpen ? "linkWrapperOpen" : ""
           } bg-black transition-[transform] duration-700 ease-[cubic-bezier(.13, .53, .38, .97)] px-10`}>
           {/* Cards go here */}
-          <NavCard title={"Home"} link="/" img="./home-screen.png" setNavOpen={setNavOpen}/>
-          <NavCard title={"Projects"} link="/projects" img="projects-screen.png" setNavOpen={setNavOpen}/>
+          <NavCard title={"Home"} link="/" img="/images/home-screen.png" setNavOpen={setNavOpen}/>
+          <NavCard title={"Projects"} link="/projects" img="/images/projects-screen.png" setNavOpen={setNavOpen}/>
           <NavCard title={"About Me"} link="/about" setNavOpen={setNavOpen}/>
           <NavCard title={"Other"} setNavOpen={setNavOpen}/>
         </div>
