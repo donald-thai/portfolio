@@ -26,7 +26,7 @@ const about = ({ navOpen, setNavOpen }) => {
           <div className="flex justify-between items-center gap-2 md:gap-10">
             <h1 className="text-white">An</h1>
             <img
-              src="./ice-tree.jpg"
+              src="./images/ice-tree.jpg"
               alt=""
               className="object-cover h-[1em] md:h-[1.25em] lg:h-[1em] w-[2em]"
             />
@@ -160,7 +160,7 @@ const about = ({ navOpen, setNavOpen }) => {
         </div>
         <div className="flex-1">
           <img
-            src="./static/images/bball1.jpg"
+            src="./images/bball1.jpg"
             alt="Man shoots a basketball"
             className="object-cover aspect-[1.8/2] w-full"
           />
