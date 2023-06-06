@@ -21,7 +21,7 @@ const index = ({ navOpen, setNavOpen }) => {
             </div>
             <div className="w-full flex">
               <img
-                src="/images/news.jpg"
+                src="/static/images/news.jpg"
                 alt="Man looks to the side in front of news study"
                 className="object-cover w-[80%] lg:h-[35svh] lg:w-[38vw]"
               />
@@ -74,7 +74,7 @@ const index = ({ navOpen, setNavOpen }) => {
           <div className="hidden md:flex bg-[#e2e2e2] pt-32 pb-20 text-right flex justify-center flex-1 pr-5 lg:pr-14 ">
             <div className="">
               <img
-                src="/images/lean.jpg"
+                src="/static/images/lean.jpg"
                 alt="man leaning over railing with new york city in the background"
                 className="object-cover md:w-[20em] md:h-[33em] lg:w-[25em] lg:h-[29.4em]"
               />
