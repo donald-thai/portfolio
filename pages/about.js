@@ -26,7 +26,7 @@ const about = ({ navOpen, setNavOpen }) => {
           <div className="flex justify-between items-center gap-2 md:gap-10">
             <h1 className="text-white">An</h1>
             <img
-              src="/images/ice-tree.jpg"
+              src="/ice-tree.jpg"
               alt=""
               className="object-cover h-[1em] md:h-[1.25em] lg:h-[1em] w-[2em]"
             />
@@ -88,7 +88,7 @@ const about = ({ navOpen, setNavOpen }) => {
           </div>
           <div className="hidden md:inline md:flex-1 md:relative">
             <img
-              src="/images/standing-nyc.jpg"
+              src="/standing-nyc.jpg"
               alt=""
               className="object-cover h-[50%] md:h-full w-full md:absolute md:top-0 md:left-0"
             />
@@ -96,7 +96,7 @@ const about = ({ navOpen, setNavOpen }) => {
 
           <div className="inline md:hidden">
             <img
-              src="/images/standing-nyc.jpg"
+              src="/standing-nyc.jpg"
               alt=""
               className="object-cover h-[20em] w-full"
             />
@@ -128,14 +128,14 @@ const about = ({ navOpen, setNavOpen }) => {
           <div className="grid grid-cols-[repeat(12,1fr)] relative flex-1">
             <div className="col-[8_/_-1] row-[1] z-[1] pt-[130%] lg:pt-[110%]">
               <img
-                src="/images/tecdp-award.jpg"
+                src="/tecdp-award.jpg"
                 alt=""
                 className="w-[100%] object-cover"
               />
             </div>
             <div className="col-[1_/_span_11] row-[1]">
               <img
-                src="/images/tecdp-2022.jpg"
+                src="/tecdp-2022.jpg"
                 alt=""
                 className="w-[100%] lg:w-[90%] object-cover"
               />
@@ -153,14 +153,14 @@ const about = ({ navOpen, setNavOpen }) => {
       <div className="flex gap-8 justify-between mb-16">
         <div className="flex-1">
           <img
-            src="/images/vball1.jpg"
+            src="/vball1.jpg"
             alt="Man spikes a volleyball"
             className="object-cover aspect-[1.8/2] w-full"
           />
         </div>
         <div className="flex-1">
           <img
-            src="/images/bball1.jpg"
+            src="/bball1.jpg"
             alt="Man shoots a basketball"
             className="object-cover aspect-[1.8/2] w-full"
           />
