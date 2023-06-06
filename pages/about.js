@@ -160,7 +160,7 @@ const about = ({ navOpen, setNavOpen }) => {
         </div>
         <div className="flex-1">
           <img
-            src="bball1.jpg"
+            src="./static/images/bball1.jpg"
             alt="Man shoots a basketball"
             className="object-cover aspect-[1.8/2] w-full"
           />
