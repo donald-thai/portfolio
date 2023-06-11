@@ -1,5 +1,5 @@
 import NavDrawer from "./NavDrawer";
-import Overlay from "./Overlay";
+import { useEffect } from "react";
 import $ from "jquery";
 
 
@@ -13,6 +13,16 @@ const NavMenu = ({ navOpen, setNavOpen }) => {
 
   };
 
+  useEffect(() => {
+    if (navOpen) {
+      // prevent scroll
+      document.body.style.overflow = 'hidden';
+    } else {
+      // set back to initial value
+      document.body.style.overflow = 'unset';
+    }
+  }, [navOpen])
+
   return (
     <>
       <button
@@ -23,7 +33,6 @@ const NavMenu = ({ navOpen, setNavOpen }) => {
         {/* {navOpen ? <Menu /> : <Close />} */}
       </button>
       <NavDrawer navOpen={navOpen} setNavOpen={setNavOpen}/>
-      <Overlay navOpen={navOpen} />
     </>
   );
 };

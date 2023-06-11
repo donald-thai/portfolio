@@ -12,7 +12,7 @@ const NavCard = ({ title, link, setNavOpen, img }) => {
   }
 
   return (
-    <div onClick={handleClick}>
+    <div onClick={handleClick} className="inline-block last:mr-0 mr-8">
       {/* <Link href={link || "/404"}> */}
         <h2 className="text-white text-3xl font-bold uppercase mb-4">{title}</h2>
         <img
