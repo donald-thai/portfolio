@@ -13,7 +13,7 @@ const NavDrawer = ({ navOpen, setNavOpen }) => {
       } transiton-[height] duration-700 ease-[cubic-bezier(.13, .53, .38, .97)]`}
       id="nav">
       <ScrollContainer
-        className={`whitespace-nowrap gap-[2em] py-[4em] md:pt-[3em] relative w-[100vw] md:w-[100vw] h-max linkWrapperDefault ${
+        className={`whitespace-nowrap gap-[2em] py-[4em] md:pt-[3em] relative w-screen h-max linkWrapperDefault ${
           navOpen ? "linkWrapperOpen" : ""
         } bg-black transition-[transform] duration-700 ease-[cubic-bezier(.13, .53, .38, .97)] px-10`}
         horizontal>
@@ -29,7 +29,7 @@ const NavDrawer = ({ navOpen, setNavOpen }) => {
           img="/projects-screen.png"
           setNavOpen={setNavOpen}
         />
-        <NavCard title={"About Me"} link="/about" setNavOpen={setNavOpen} />
+        <NavCard title={"About Me"} link="/about" img="/about-screen.png" setNavOpen={setNavOpen} />
         <NavCard title={"Other"} setNavOpen={setNavOpen} />
       </ScrollContainer>
     </nav>
