@@ -3,12 +3,10 @@ import Link from "next/link";
 import Button from "@/components/Button";
 import { openInNewTab } from "@/assets/funcs";
 
-const about = ({ navOpen, setNavOpen }) => {
+const about = () => {
   return (
     <div
-      className={`h-full w-full ${
-        navOpen ? "moveUp" : ""
-      } transiton-[height] duration-700 ease-[cubic-bezier(.13, .53, .38, .97)] wrapper bg-[#e2e2e2] pt-28 px-5 md:px-20 lg:px-32 pb-32 flex flex-col `}>
+      className={`h-full w-full bg-[#e2e2e2] pt-28 px-5 md:px-20 lg:px-32 pb-32 flex flex-col `}>
       <div className="uppercase tracking-wide font-bold flex flex-col gap-2 md:gap-3 mb-28 md:mb-40">
         <div className="flex items-center gap-6">
           <h1 className="flex-1 text-[3.25rem]/[1.5rem] md:text-8xl lg:text-9xl">
@@ -34,7 +32,7 @@ const about = ({ navOpen, setNavOpen }) => {
           </div>
         </div>
         <div>
-          <h3 className="w-full text-sm md:text-base lg:text-xl normal-case font-semibold">
+          <h3 className="w-full text-sm md:text-base lg:text-xl normal-case font-semibold lg:hidden">
             I am an aspiring software engineer based in Austin, Texas with
             experience in full stack development. currently looking for SWE
             internship opportunities
@@ -144,8 +142,7 @@ const about = ({ navOpen, setNavOpen }) => {
         </div>
         <div className="inline lg:hidden md:text-xl">
           <p>
-            This summer i will be an intern on the x team working on the y
-            product. my intern team and i will make ...
+            This summer, I am interning at Cigna again. I'm currently working with the High Performance Providers team to help clean up their front end as well as restructure their backend APIS. Along with this work, I am on a team with other interns designing an application, FHIRhouse, that solves an internal problem at Cigna. As the frontend lead, I have designed the entire frontend of the app and am currently building it out.
           </p>
         </div>
       </div>

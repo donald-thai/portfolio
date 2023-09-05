@@ -1,16 +1,14 @@
 import Button from "@/components/Button";
 import { useRouter } from 'next/router';
 
-const index = ({ navOpen, setNavOpen }) => {
+const index = () => {
 
   const router = useRouter()
 
   return (
     <>
       <div
-        className={`h-full w-full pt-[6vh] pl-5 lg:pl-14 ${
-          navOpen ? "moveUp" : ""
-        } transiton-[height] duration-700 ease-[cubic-bezier(.13, .53, .38, .97)] wrapper bg-white`}>
+        className={`h-full w-full pt-[6vh] pl-5 lg:pl-14 bg-white`}>
         {/* Just in case some browsers don't support svh*/}
         <div
           className={`h-[94svh] lg:h-[94vh] lg:h-[94svh] w-full flex flex-col justify-around md:justify-between bg-[#e2e2e2]`}>
